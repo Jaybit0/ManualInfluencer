@@ -1,0 +1,4 @@
+GCP_PROJECT_ID = "bliss-hack25fra-9587"
+BUCKET_NAME = "bliss-hack25fra-9587-eu-notebooks"
+PDF_FILE_NAME = "BDA_PowerLine_WebCast3.pdf"
+TEXT_AND_PDF_TO_SCENES_PROMPT = """Erstelle ein Skript für PowerLine webcast3 ein absurd-lustiges TikTok-Video basierend auf der Bedienungsanleitung. Der Sprecher spricht in einer neutralen, männlichen Stimme. Es soll eine kurze unterhaltsame Geschichte sein. Der Humor in dem Video besteht darin, die spezifischen Worte aus der Bedienungsanleitung in absurden Situationen wieder zu finden. Die Geschichte soll interessant, unterhaltsam und random sein. Alles ist sehr satirisch aufgeladen. Das Video ist insgesamt sehr kurz, so 10-20s. Der Text ist wichtiger als die visuellen Elemente. Der Sprecher kann seine Stimme nicht verstellen. Der erste Satz ist der wichtigste. Er soll catchy sein und direkt in die situation einsteigen, keine einleitung und kein Schluss. Die Geschichte geht schnell vorran, wenige Floskeln."""

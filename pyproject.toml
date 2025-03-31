@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "google-blissathon-2025"
+name = "manual_influencer"
 version = "0.1.0"
 description = ""
 authors = ["Rodrigo Bermudez Schettino <rodrigobdz@users.noreply.github.com>"]
