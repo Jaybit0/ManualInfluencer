@@ -1,0 +1,31 @@
+{
+  // Linting
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Syntax highlighting
+  "files.associations": {
+    "script/**": "shellscript",
+    "*.exp": "shellscript",
+    "*.bats": "shellscript",
+    "*.lock": "ruby",
+    "Dockerfile*": "dockerfile",
+    ".lintstagedrc": "yaml",
+    "*.cf": "shellscript",
+    "Vagrantfile": "ruby"
+  }
+}
