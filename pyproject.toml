@@ -10,6 +10,9 @@ python = "^3.11"
 google-cloud-texttospeech = "^2.25.1"
 google-genai = "^1.8.0"
 google-cloud-storage = "^3.1.0"
+opencv-python = "^4.11.0.86"
+imageio-ffmpeg = "^0.6.0"
+ffmpeg = "^1.4"
 
 
 [tool.poetry.group.dev.dependencies]
