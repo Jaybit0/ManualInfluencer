@@ -1,14 +1,4 @@
-# Linters
-
-> Template repository with linter configuration files
-
-Supported languages / file types:
-
-- Markdown
-- Shell
-- JSON
-- YML
-- Python
+# Google BLISSathon 2025
 
 ## Requirements
 
