@@ -11,22 +11,18 @@ from . import constants
 from .pdf_utils import download_and_encode_pdf_to_base64
 
 
-def generate_script(text=constants.TEXT_AND_PDF_TO_SCENES_PROMPT) -> str:
+def generate_script(text=constants.TEXT_TO_SCENES_PROMPT) -> str:
     client = genai.Client(
         vertexai=True,
         project=constants.GCP_PROJECT_ID,
         location="global",
     )
 
-    document1 = types.Part.from_bytes(
-        data=base64.b64decode(f"""{download_and_encode_pdf_to_base64()}"""),
-        mime_type="application/pdf",
-    )
     text1 = types.Part.from_text(text=text)
 
     model = "gemini-2.0-flash-001"
     contents = [
-        types.Content(role="user", parts=[text1, document1]),
+        types.Content(role="user", parts=[text1]),
     ]
     generate_content_config = types.GenerateContentConfig(
         temperature=1,
@@ -66,7 +62,7 @@ def generate_script(text=constants.TEXT_AND_PDF_TO_SCENES_PROMPT) -> str:
             },
         },
         system_instruction=[
-            types.Part.from_text(text=constants.TEXT_AND_PDF_TO_SCENES_PROMPT)
+            types.Part.from_text(text=constants.TEXT_TO_SCENES_SYSTEM_INSTRUCTION)
         ],
     )
 
