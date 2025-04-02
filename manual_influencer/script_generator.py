@@ -25,7 +25,7 @@ def generate_script(text=constants.TEXT_TO_SCENES_PROMPT) -> str:
         types.Content(role="user", parts=[text1]),
     ]
     generate_content_config = types.GenerateContentConfig(
-        temperature=1,
+        temperature=2,
         top_p=0.95,
         max_output_tokens=8192,
         response_modalities=["TEXT"],
